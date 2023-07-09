@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mock Task Board</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="board">
+    <div class="column">
+      <h2>To Do</h2>
+      <ul id="todo-list" class="task-list" ondragover="allowDrop(event)" ondrop="drop(event)">
+        <li draggable="true" class="task" ondragstart="dragStart(event)" id="1">Task 1</li>
+        <li draggable="true" class="task" ondragstart="dragStart(event)" id="2">Task 2</li>
+        <li draggable="true" class="task" ondragstart="dragStart(event)" id="3">Task 3</li>
+      </ul>
+    </div>
+    <div class="column" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h2>In Progress</h2>
+      <ul id="inprogress-list" class="task-list"></ul>
+    </div>
+    <div class="column" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h2>Done</h2>
+      <ul id="done-list" class="task-list"></ul>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

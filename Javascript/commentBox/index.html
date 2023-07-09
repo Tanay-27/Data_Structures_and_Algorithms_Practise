@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="commentBx">
+        <input type="text" id="commentTxt" />
+        <button id="commentBtn" onclick="addComment()">Comment</button>
+    </div>
+    <div class="commentList" id="commentListContainer">
+        <div class="comment">
+            <span class="author">Testing</span>
+            <span class="commentString">Hello World</span>
+            <span class="replyLikeSpace">
+                <span>&#x2661; &#x2665;</span>
+                <button class="replyBtn">Reply</button>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

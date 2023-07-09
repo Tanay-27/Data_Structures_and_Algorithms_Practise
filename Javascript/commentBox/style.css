@@ -1,0 +1,74 @@
+.commentBx{
+    display: flex;
+}
+
+#commentTxt{
+    width: 80%;
+    border: .5px solid #101797;
+    height: 30px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+#commentBtn{
+    font-size: 15px;
+    width:20%;
+    padding: 2px;
+    background-color: #101797;
+    border-radius: 3px;
+    margin-left: 5px;
+    color: #fff;
+}
+
+.commentList{
+    border: 1px solid #101797;
+    margin-top: 5px;
+    height: 85vh;
+}
+.comment{
+    margin: 5px;
+    border: 1px solid #919191;
+    padding: 5px;
+}
+.author{
+    background-color: #d7d6d6;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #696969;
+}
+.replyLikeSpace{
+    position: relative;
+    /* right: 10px; */
+    top: 6px;
+    float: right;
+    background-color: #fff;
+    padding: 2px;
+}
+.replyBtn{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    padding: 1px;
+}
+.like{
+    font-size: 12px;
+    color: red;
+}
+.replyInputElement{
+    display: block;
+    width: 90%;
+    display: flex;
+    /* border: 1px solid #919191; */
+}
+
+.replyInputElement input{
+    padding: 2px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #101797;
+    box-sizing: border-box;
+    background-color: #e5e5e5;
+    margin-right: 5px;
+    flex: 1;
+}
