@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex: 1 1;
+    margin-top: 50px;
+}
+.boxes{
+    border: 2px solid #000;
+    height: 250px;
+    width: 250px;
+    margin: 5px;
+    padding: 5px;
+}
+#b1{
+    position: relative;
+    top: 15px;
+    background-color: #fa696951;
+}
+#b2{
+    /* position: relative; */
+    top: 115px;
+    background-color: #01FF2373;
+}
+#b3{
+    top: 15px
+}

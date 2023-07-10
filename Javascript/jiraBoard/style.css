@@ -1,0 +1,24 @@
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  min-height: 100px;
+  margin-bottom: 20px;
+}
+
+.task {
+  padding: 5px;
+  background-color: #f1f1f1;
+  margin-bottom: 5px;
+  cursor: move;
+}
