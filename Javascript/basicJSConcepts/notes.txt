@@ -1,0 +1,14 @@
+Arrays Memory Allocation.
+when an array is declared, it allocates a certain memory block which is contiguous.
+When this limit exceeds, a new memory block with generally double the size is allocated at a different location, the data is copied and present memory is deallocated.
+Since this is an expensive operation. We can preallocate memory if we know from start;
+let arr = new Array(size); (default value is undefined for all elements, tested)
+
+
+
+Stacks
+For stacks one can simply use arrays in javascript, since it provides constant time operations for pushing and poping.
+But if the size of array needs to be huge. a linked list approach might provide better performance since linked list provides constant time complexity for adding/removing elements from its head.
+
+
+
