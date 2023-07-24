@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 2000px;
+    background-color: beige;
+    border: 2px solid #000;
+}
+p{
+    padding: 20px;
+}
+#scrollBtn{
+    user-drag: none; /* Disable default drag behavior on some browsers */
+    cursor: grab;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+}
+
+
+/* Stick figure css starts */
+.stickFigure{
+    position: absolute;
+    /* border: 1px solid #000; */
+    width: 100px;
+    height: 100px;
+    margin-top:-37px;
+    transform: rotate(-90deg);
+}
+
+.stickFigure > * {
+    position: relative;
+    background-color: #000;
+}
+
+.figHead{
+    top:20px;
+    left:42%;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+
+.figBody{
+    top: 23px;
+    left:47%;
+    height: 70px;
+    width: 10px;
+    border-radius: 4px;
+}
+
+.figLeftHand{
+    top:-60px;
+    left:44%;
+    height: 40px;
+    width: 5px;
+    transform: rotate(-45deg);
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+
+.figRightHand{
+    top:-100px;
+    left:52%;
+    height: 40px;
+    width: 5px;
+    transform-origin: bottom;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+
+.figLeftLeg{
+    top:-60px;
+    left:45%;
+    height: 40px;
+    width: 5px;
+    transform: rotate(30deg);
+    transform-origin: top;
+    border-radius: 5px;
+}
+
+.figRightLeg{
+    top:-100px;
+    left:52%;
+    height: 40px;
+    width: 5px;
+    transform: rotate(-30deg);
+    transform-origin: top;
+    border-radius: 5px;
+}
+
+.stickFigure:hover > .figLeftHand {
+    animation: leftHandMovement 2s linear 0s infinite alternate none;
+}
+
+.stickFigure:hover > .figRightLeg {
+    animation: rightLegMovement 2s linear 0s infinite alternate none;
+}
+
+@keyframes leftHandMovement {
+    0%{    transform: rotate(-45deg);  }
+    50%{    transform: rotate(-15deg);    }
+    100%{    transform: rotate(-45deg);    }
+}
+
+@keyframes rightLegMovement {
+    0%{    transform: rotate(-20deg);  }
+    50%{    transform: rotate(-40deg);    }
+    100%{    transform: rotate(-20deg);    }
+}
+
+.stickFigure:hover > .figRightHand {
+    animation: rightHandMovement 2s linear 1s infinite alternate none;
+}
+
+.stickFigure:hover > .figLeftLeg {
+    animation: leftLegMovement 2s linear 1s infinite alternate none;
+}
+
+@keyframes rightHandMovement {
+    0%{    transform: rotate(45deg);  }
+    50%{    transform: rotate(15deg);    }
+    100%{    transform: rotate(45deg);    }
+}
+
+@keyframes leftLegMovement {
+    0%{    transform: rotate(20deg);  }
+    50%{    transform: rotate(40deg);    }
+    100%{    transform: rotate(20deg);    }
+}
+
+
+.stickFigure:hover > .figBody {
+    animation: bodyMovement 2s linear 0s infinite alternate none;
+}
+@keyframes bodyMovement {
+    0%{    transform: rotate(0deg);  }
+    50%{    transform: rotate(5deg);    }
+    100%{    transform: rotate(-5deg);    }
+}
+
+
+.stickFigure:hover > .figHead {
+    animation: headMovement 1s linear 0s infinite alternate none;
+}
+@keyframes headMovement {
+    0%{    transform: translate(-3px);  }
+    50%{    transform: translate(0px);    }
+    100%{    transform: translate(3px);    }
+}
+
+/* Stick figure css ends */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .slider-container {
+    width: 100%;
+    transform: rotate(90deg);
+    /* transform: translate(50px); */
+    height: 20px;
+    background-color: #ddd;
+    position: relative;
+  }
+
+  .slider{
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
